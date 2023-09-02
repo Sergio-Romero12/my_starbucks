@@ -8,9 +8,9 @@ body {
   grid-template-columns: auto auto;
   padding: 0 20px;
   height: 100px;
-  box-shadow: 0px 3px 5px 0px rgba(84, 73, 73, 0.34);
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(84, 73, 73, 0.34);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(84, 73, 73, 0.34);
+  box-shadow: 0px 3px 5px 0px rgba(80, 76, 76, 1);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(80, 76, 76, 1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(80, 76, 76, 1);
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -73,7 +73,7 @@ body {
 .rewards{
   flex: 0.3;
   position: relative;
-  height: auto;
+  height: 100%;
   background:linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgb(80, 79, 79)), url('https://www.starbucks.es/sites/starbucks-es/files/styles/c01_vertical_card_724x1009/public/2023-05/Banner%20home-724x1009.jpg.webp?itok=sLDXEzbA');
 }
 
@@ -99,9 +99,14 @@ body {
     font-weight: bolder;
     border-color: white;
     color: white;
+    cursor: pointer;
 }
 
-.container-left{
+.button-reward:hover{
+  background-color: rgba(255, 255, 255, 0.199);
+}
+
+.container-right{
   flex: 0.7;
 }
 
@@ -114,19 +119,24 @@ body {
   padding: 32px 0px 32px 60px;
 }
 
-#title{
+.frappuccino-text h2{
   font-size: 27px;
   margin: 0px 0px 16px;
   color: #1F1F1F;
 }
 
-#content{
+.frappuccino-text p{
   font-size: 14px;
   margin: 0px 0px 24px;
   color: #6C6C6C;
 }
 
-#find-us-button{
+.frappuccino-text b{
+  font-weight: bolder;
+  color: #000000;
+}
+
+.green-button{
   border-radius: 20px;
   padding: 9px 15px;
   margin-right: 20px;
@@ -135,4 +145,176 @@ body {
   border-color: #007500;
   color: #007500;
   font-family: "SoDo Sans SemiBold", sans-serif;
+  cursor: pointer
+}
+
+.green-button:hover{
+  background-color: #00750027;
+}
+
+.domicilio{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0px -5px 0px 0px;
+  padding: 32px 0px 32px 60px;
+}
+
+.domicilio-img-div img{
+  width: 100%;
+}
+
+.domicilio-text-div{
+  margin: 0px 50px 0px 51px;
+  padding: 0px 5px;
+}
+
+.domicilio-text-div h3{
+  font-weight: bolder;
+  font-size: 20px;
+  color: #000000;
+  margin: 0px;
+}
+
+.domicilio-text-div h2{
+  font-size: 23px;
+  color: #3d3c3c;
+  margin: 16px 0px 0px;
+}
+
+.domicilio-text-div p{
+  font-size: 14px;
+  color: #6C6C6C;
+  margin: 16px 0px 20px 0px;
+}
+
+.grid-table{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0px -5px 0px 0px;
+  padding: 32px 0px 32px 60px;
+}
+
+.card{
+  width: 97%;
+  margin-bottom: 40px;
+  box-shadow: 0px 3px 5px 0px rgba(141, 139, 139, 0.2);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(141, 139, 139, 0.2);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(141, 139, 139, 0.2);
+}
+
+.card img{
+  width: 100%;
+}
+
+.card-content{
+  padding: 0px 24px 24px;
+}
+
+.card-content h3{
+  font-size: 20px;
+  color:#1F1F1F;
+  margin: 16px 0px 0px 0px;
+}
+
+.card-content p{
+  font-size: 14px;
+  color:#6C6C6C;
+  margin: 0px 0px 16px;
+}
+
+.footer{
+  box-shadow: 0px -3px 5px 0px rgba(141, 139, 139, 0.2);
+  -webkit-box-shadow: 0px -3px 5px 0px rgba(141, 139, 139, 0.2);
+  -moz-box-shadow: 0px 3px -3px 0px rgba(141, 139, 139, 0.2);
+}
+
+.highlight-info{
+  margin: 0px -5px 0px;
+  padding: 0px 0px 5px 60px;
+}
+
+nav { 
+  margin : 10px auto; 
+}
+
+span {
+  cursor : pointer;
+  display: block;
+  font-size: 23px;
+  font-weight: lighter;
+  padding: 30px 0px 20px 0px;
+}
+
+span::after {
+  float: right;
+  margin-right: 5%;
+  content: "V";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  margin: 10px;
+}
+
+ul.slide{
+  padding: 0%;
+  margin: 0%;
+}
+
+a{
+  color:#6C6C6C;
+  text-decoration:none;
+  font-size: 14px;
+}
+
+.slide li {padding : 20px 0px; list-style:none; margin: 0;}
+
+#touch1, #touch2, #touch3, #touch4 {
+  position: absolute; opacity: 0; height: 0px;
+}
+
+#touch1:checked + .slide {height: auto;}
+#touch2:checked + .slide {height: auto;} 
+#touch3:checked + .slide {height: auto;} 
+#touch4:checked + .slide {height: auto;} 
+
+.social-media{
+  padding: 0px 0px 5px 60px;
+}
+
+.social-media hr{
+ margin-right: 27px;
+ border: 1px solid rgb(187, 184, 184);
+}
+
+.icons{
+  display: flex;
+  margin-top: 35px;
+  height: 40px;
+  width: 35%;
+}
+
+.icon-media{
+  width: 100%;
+  cursor: pointer;
+}
+
+.more-info{
+  margin: 0px -5px 0px;
+  padding: 0px 0px 5px 60px;
+}
+
+.more-info p{
+  color: #1F1F1F;
+  font-size: 14px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.more-info p:hover{
+  color:#868080;
 }
